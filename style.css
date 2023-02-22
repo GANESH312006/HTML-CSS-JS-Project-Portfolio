@@ -1,0 +1,226 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: #444;
+	font-family: sans-serif;
+	border-top: #1098ad 10px solid;
+	position: relative;
+}
+
+h1 {
+	font-size: 26px;
+	text-transform: uppercase;
+	font-style: italic;
+}
+
+.container{
+	width: 1000px;
+	/* margin-left: auto;
+	margin-right: auto; */
+	margin: 0 auto;
+	/* position: relative; */
+}
+
+.main-header {
+	background-color: #f7f7f7;
+	padding: 20px 40px;
+	margin-bottom: 60px;
+	/* height: 80px; */
+}
+
+.article-header {
+	margin-bottom: 40px;
+	/* position: relative; */
+}
+
+nav{
+	font-size: 18px;
+}
+
+article{
+	margin-bottom: 60px;
+}
+
+.related-post {
+	border-top: 5px solid #1098ad;
+	background-color: #f7f7f7;
+	border-bottom: #1098ad 5px solid;
+	padding: 50px 0;
+	width: 500px;
+}
+
+h1,
+h2,
+h3 {
+	color: #1098ad;
+}
+
+h2 {
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+
+h3 {
+	font-size: 30px;
+	margin-bottom:20px;
+}
+
+h4 {
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+p {
+	font-size: 22px;
+	line-height: 1.5;
+	margin-bottom: 15px;
+}
+
+li {
+	font-size: 22px;
+	margin-bottom: 10px;
+	/* display: inline-block; */
+}
+
+li:last-child {
+	margin-bottom: 0;
+}
+
+#copyright {
+	font-size: 16px;
+}
+
+#author {
+	font-style: italic;
+	font-size: 18px;
+	margin-bottom: 0;
+}
+
+.related-author {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.related-article-list {
+	list-style: none;
+}
+
+.main-ul{
+	margin-left:50px;
+}
+
+.first-ol{
+	margin-left: 50px;
+	margin-bottom: 25px;
+}
+
+/* .first-li{
+	font-weight: bold;
+} */
+
+/* pseduo class */
+
+li:first-child {
+	font-weight: bold;
+}
+
+li:last-child {
+	font-style: italic;
+}
+
+/* li:nth-child(even){
+	/* color:red; */
+/* } */
+
+/* misconception this wont work! */
+
+/* article p:last-child{
+	color:red;
+} */
+
+/* styling hyperlinks*/
+a:link {
+	color: #1098ad;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #1098ad;
+}
+
+a:hover {
+	color: orangered;
+	font-weight: bold;
+	text-decoration: underline orangered;
+}
+
+a:active {
+	color: black;
+	font-style: italic;
+}
+/* LVHA  */
+/* resolving conflict */
+/* #copyright{
+	color: red;
+}
+
+.copyright{
+	color: #1098ad;
+}
+
+.text{
+	color: orange;
+}
+
+footer p{
+	color:green;
+} */
+
+.post-image{
+	width:100%;
+	height: auto;
+}
+
+nav a:link{
+	display: inline-block;
+	/* margin: 60px 30px; */
+}
+.heart-button{
+	font-size: 22px;
+	padding: 20px;
+	margin-bottom:22px;
+	position: absolute;
+	/* top:50px;
+	left:50px; */
+	bottom:50px;
+	right: 50px;
+}
+
+
+/* pseudo elements */
+
+h1::first-letter{
+	font-style: normal;
+	margin-right: 5px;
+}
+
+h2{
+	position: relative;
+}
+
+h2::after{
+	content: "TOP!";
+	background-color: #ffe70e;
+	color:#000;
+	font-size:16px;
+	font-weight: bold;
+	display:inline-block;
+	padding: 5px 10px;
+	position: absolute;
+	top: -15px;
+	right: -25px;
+}
